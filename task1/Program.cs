@@ -22,8 +22,8 @@ int num = Number("input number: ");
 int pow = Power ("input power: ");
 int result = PowerResult(num, pow);
 
-if (pow<0){System.Console.WriteLine("error");}
+if (pow>0){System.Console.WriteLine(result);}
 else if (pow == 0){System.Console.WriteLine(1);}
-else {System.Console.WriteLine(result);}
+else {System.Console.WriteLine("error");}
 
 
