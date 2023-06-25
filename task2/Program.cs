@@ -1,12 +1,12 @@
-﻿System.Console.Write("input number: ");
-string str = Console.ReadLine();
-int i = 0;
-int num = int.Parse(str);
-int sum = 0;
+﻿int Count (string text) {
+    System.Console.WriteLine(text);
+    int num = Math.Abs(Convert.ToInt32(System.Console.ReadLine()));
+    int sum = 0;
+    int i = 0;
+    while (num>0) {
+        sum += num%10;
+        num = num/10;
+        i++;}
+    return sum;}
 
-while (i<str.Length) {
-    sum += num%10;
-    num = num/10;
-    i++;
-}
-System.Console.WriteLine(sum);
+System.Console.WriteLine(Count("input number: "));
